@@ -16,7 +16,7 @@ async def main(request: Request):
         DEEPSEEK_API_URL,
         headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}"},
         json={
-            "model": "meta-llama/llama-3.1-8b-instruct:free",
+            "model": "openrouter/free",
             "messages": [{"role": "user", "content": user_text}],
         }
     )
